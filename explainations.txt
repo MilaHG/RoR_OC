@@ -1,0 +1,10 @@
+***********************
+**** RUBY ON RAILS ****
+***********************
+
+RoR est un framework de développement web : ensemble d'outils et de classes déjà écrits.
+- rapidité de développement
+- un framework protège d'un certain nombre d'attaques sur internet intégrées au framework car elles sont communes et connues des dév
+- qualité du code car RoR a des règles à respecter : relecture facile et réutilisabilité du code
+
+
