@@ -2,9 +2,140 @@
 **** RUBY ON RAILS ****
 ***********************
 
+I. Intro
+
+II. Installation de RoR
+
+
+🍀🍀🍀🍀🍀🦋🍀🍀🍀🍀🍀
+I. Intro
+
 RoR est un framework de développement web : ensemble d'outils et de classes déjà écrits.
 - rapidité de développement
-- un framework protège d'un certain nombre d'attaques sur internet intégrées au framework car elles sont communes et connues des dév
-- qualité du code car RoR a des règles à respecter : relecture facile et réutilisabilité du code
+- un framework protège d'un certain nombre d'attaques sur internet intégrées au framework car elles sont communes et connues des développeurs
+- qualité du code car RoR impose une structure de fichiers à respecter : relecture facile et réutilisabilité du code
+- améliorations des performances
+
+1995 - création de Ruby par Matz, dev japonais
+2005 - création RoR
+
+🍀🍀🍀🍀🍀🦋🍀🍀🍀🍀🍀
+II. Installation de RoR
+
+Ça y est, vous allez mettre les mains dans le cambouis ! Vous avez besoin de ces outils :
+
+    un système d’exploitation disposant d’un terminal, comme Ubuntu ou OSX ;
+
+    un terminal, celui installé sur votre système d'exploitation convient ;
+
+    un éditeur de texte de votre choix, par exemple Atom.io ;
+
+    un navigateur de votre choix, par exemple Firefox.
+
+Direction le terminal. Vous allez installer Ruby et Rails. Il y a quelques variations en fonction de si vous utilisez Ubuntu 18.04 ou OSX 10.13 (ou versions supérieurs). Sous OSX, vous devez avoir homebrew d’installé tel qu’indiqué dans le cours de Ruby.
+
+❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️
+☀️ ☀️ ☀️ ☀️ ☀️ ☀️ ☀️ ☀️ ☀️ ☀️
+http://railsapps.github.io/installrubyonrails-mac.html
 
 
+☀️ ☀️ ☀️ ☀️ ☀️ ☀️ ☀️ ☀️ ☀️ ☀️
+Sous OSX
+
+<cmd>
+    # Mise à jour des outils de développement
+    xcode-select --install
+    brew update
+
+    # Installe Node.js et git
+    brew install node git
+
+    # Installe rbenv
+    git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+    echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
+    echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+    git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
+    git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+    source ~/.bash_profile
+
+    # Installe Ruby
+    rbenv install 2.4.4
+    rbenv global 2.4.4
+
+    # Installe Rails
+    gem install rails -v 4.2.10
+    gem install rails -v 5.2.0 => j'ai tapé cette ligne et non la précédente issue du tuto datant de 2017
+☀️ ☀️ ☀️ ☀️ ☀️ ☀️ ☀️ ☀️ ☀️ ☀️
+
+EXPLICATIONS :
+    - Node.js est un prérequis pour le bon fonctionnement de rails, il intervient dans la gestion des fichiers JavaScript de vos futurs sites ;
+    - rbenv est un programme qui permet d’installer n’importe quelle version de Ruby facilement ;
+    - gem est un programme qui vient avec Ruby. Il permet d’installer d’autres programmes, comme Rails. 4.2.10 est la version de Rails que nous utilisons aujourd’hui.
+
+Ruby on Rails 5 est sorti courant 2016. Son fonctionnement est suffisamment similaire à RoR 4 pour que ce cours soit compréhensible pour ces deux versions.
+
+☀️ ☀️ ☀️ ☀️ ☀️ ☀️ ☀️ ☀️ ☀️ ☀️
+Ça y est, Ruby on Rails est installé sur votre système ! Testez par vous même la commande de tous les débuts, qui initialise un nouveau site, que j’appelle ici « castor » :
+
+<cmd>
+    rails new castor
+
+    ... cela a donné :
+            Bundle complete! 18 Gemfile dependencies, 78 gems now installed.
+            Use `bundle info [gemname]` to see where a bundled gem is installed.
+            Post-install message from chromedriver-helper:
+
+              +--------------------------------------------------------------------+
+              |                                                                    |
+              |  NOTICE: chromedriver-helper is deprecated after 2019-03-31.       |
+              |                                                                    |
+              |  Please update to use the 'webdrivers' gem instead.                |
+              |  See https://github.com/flavorjones/chromedriver-helper/issues/83  |
+              |                                                                    |
+              +--------------------------------------------------------------------+
+
+            Post-install message from sass:
+
+            Ruby Sass has reached end-of-life and should no longer be used.
+
+            * If you use Sass as a command-line tool, we recommend using Dart Sass, the new
+              primary implementation: https://sass-lang.com/install
+
+            * If you use Sass as a plug-in for a Ruby web framework, we recommend using the
+              sassc gem: https://github.com/sass/sassc-ruby#readme
+
+            * For more details, please refer to the Sass blog:
+              https://sass-lang.com/blog/posts/7828841
+
+                     run  bundle exec spring binstub --all
+            * bin/rake: spring inserted
+            * bin/rails: spring inserted
+
+Plein de fichiers se créent dans le répertoire « castor », dans le dossier où vous êtes actuellement. C’est le fameux code que Rails écrit à votre place. Nous allons étudier petit à petit tout cela au fur et à mesure de la création de votre site web.
+
+Pour rentrer dans le dossier nouvellement créé, faites :
+<cmd>
+    cd castor
+
+Pour visualiser un site réalisé avec Rails, exécutez cette commande :
+<cmd>
+    rails server
+
+Elle donne pour résultat :
+    => Booting WEBrick
+    => Rails 4.2.10 application starting in development on http://localhost:3000
+    => Run `rails server -h` for more startup options
+    => Ctrl-C to shutdown server
+
+Tant que la commande est lancée, votre site est accessible à l’adresse http://localhost:3000.
+
+        => localhost:3000 dans le navigateur
+
+Rails donne des conseils pour continuer. Ne les suivez pas, nous allons voir cela ensemble dans la langue de Molière !
+
+localhost est un synonyme de 127.0.0.1, l’adresse IP de votre machine. Une fois que votre navigateur sait sur quel machine chercher l’information, il précise quel logiciel de la machine doit lui répondre. Cette précision est apportée par le port, ici 3000, sur lequel Rails écoute et sert ses réponses (d’où le mot « server »). Il est possible de transformer le couple adresse IP + port en un nom de domaine, mais ce sujet n’étant pas spécifique à Ruby on Rails, cela ne sera pas abordé dans ce cours.
+
+Pour de nouveau être capable d’écrire des commandes dans votre terminal, il faut arrêter le serveur avec Ctrl + C. Ce raccourci clavier, usuellement utilisé pour copier un texte, n’a pas du tout la même signification dans un terminal : ce raccourci provoque la fin de la commande en cours, que ce soit « rails server » ou une autre !
+
+🐠🐠🐠🐠🐠🐠🐠🐠🐠🐠
+https://openclassrooms.com/fr/courses/3149156-initiez-vous-a-ruby-on-rails/3149176-creez-votre-premiere-page

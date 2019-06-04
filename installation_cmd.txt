@@ -1,0 +1,1021 @@
+eccodes                                  pandoc-crossref
+efl                                      paperkey
+elasticsearch                            parallel
+elasticsearch@5.6                        parallelstl
+elixir                                   pari
+emacs                                    passenger
+embulk                                   patchelf
+emscripten                               payara
+epubcheck                                pazpar2
+erlang                                   pbrt
+erlang@19                                pcapplusplus
+erlang@20                                pcb
+eslint                                   pcl
+etcd                                     pdal
+ethereum                                 pdfgrep
+etl                                      pdfpc
+evince                                   pdftoipe
+exiv2                                    pdns
+exploitdb                                pdnsrec
+eye-d3                                   pegtl
+faas-cli                                 percona-xtrabackup
+fastme                                   perl
+ffmpeg                                   peru
+ffsend                                   petsc
+fftw                                     petsc-complex
+fibjs                                    pgbadger
+field3d                                  pgcli
+file-formula                             pgformatter
+file-roller                              pgplot
+fio                                      phoronix-test-suite
+firebase-cli                             php
+flatbuffers                              php-code-sniffer
+flintrock                                php-cs-fixer
+flow                                     php@7.1
+fluxctl                                  php@7.2
+fn                                       phpunit
+fobis                                    physfs
+folly                                    picard-tools
+fontforge                                picat
+fonttools                                pick
+fq                                       pijul
+freeling                                 pilosa
+freeradius-server                        pinfo
+freetds                                  pixman
+frugal                                   planck
+fstrm                                    plantuml
+fuse-emulator                            platformio
+fuse-zip                                 plplot
+fuseki                                   plzip
+futhark                                  pmd
+fx                                       pngquant
+fzf                                      ponyc
+galen                                    poppler
+gammu                                    postgis
+gandi.cli                                postgresql
+gauge                                    postgresql@10
+gawk                                     postgresql@9.4
+gcc                                      postgresql@9.5
+gcc@5                                    postgresql@9.6
+gcc@6                                    pre-commit
+gcc@7                                    presto
+gcsfuse                                  prettier
+gdal                                     privoxy
+gdb                                      profanity
+gdcm                                     proguard
+gecode                                   proj
+geeqie                                   prometheus
+gegl                                     protoc-gen-go
+genact                                   prototool
+geogram                                  pspg
+geos                                     psql2csv
+geoserver                                pulumi
+gerbil-scheme                            pumba
+get_iplayer                              pure-ftpd
+getdns                                   purescript
+getmail                                  pushpin
+gexiv2                                   putty
+ghc                                      py3cairo
+ghq                                      pyenv
+ghr                                      pygobject
+gibo                                     pygobject3
+gif2png                                  pypy
+gifsicle                                 pyside
+gifski                                   qalculate-gtk
+ginac                                    qbs
+git-annex                                qca
+git-cinnabar                             qd
+git-cola                                 qemu
+git-ftp                                  qpdf
+git-lfs                                  qrupdate
+git-quick-stats                          qt
+git-review                               quantlib
+git-secret                               quazip
+git-town                                 quicktype
+gitbucket                                quilt
+gitfs                                    qwt
+gitg                                     r
+gitlab-runner                            rabbitmq
+gitless                                  radare2
+gjs                                      rakudo-star
+glances                                  rancid
+glfw                                     range-v3
+glib                                     rawtoaces
+glib-networking                          raylib
+glm                                      rclone
+glooctl                                  rdesktop
+glslang                                  re2
+gmic                                     rebar3
+gmsh                                     recoverjpeg
+gmt                                      redis
+gnu-getopt                               redo
+gnumeric                                 remind
+gnunet                                   reposurgeon
+gnupg                                    reprepro
+gnuplot                                  restic
+gnuradio                                 restview
+gnutls                                   rhino
+go                                       riemann
+goaccess                                 riff
+gobject-introspection                    ripgrep
+gocr                                     rke
+godep                                    roll
+goffice                                  rom-tools
+golang-migrate                           root
+gollum                                   roswell
+golo                                     rsyslog
+gomplate                                 rt-audio
+google-authenticator-libpam              rtmidi
+google-benchmark                         rtv
+googler                                  ruby
+gopass                                   ruby-build
+gor                                      ruby@2.4
+goreleaser                               rust
+gosu                                     rustup-init
+gox                                      s-nail
+gpgme                                    s-search
+gr-osmosdr                               salt
+gradle                                   sassc
+grafana                                  saxon
+grails                                   sbcl
+grakn                                    scalapack
+graphene                                 scalariform
+grib-api                                 scipy
+gromacs                                  scmpuff
+groonga                                  sdb
+groovy                                   sdcc
+groovysdk                                sdl
+grpc                                     sdl2_ttf
+grpcurl                                  sec
+gsoap                                    serd
+gssdp                                    serf
+gst-editing-services                     serve
+gst-libav                                serverless
+gst-plugins-bad                          sfcgal
+gst-plugins-base                         shc
+gst-plugins-good                         shfmt
+gst-plugins-ugly                         ship
+gst-python                               shogun
+gst-rtsp-server                          shpotify
+gst-validate                             shyaml
+gstreamer                                sile
+gtk+3                                    silk
+gtk-doc                                  simple-scan
+gtk-gnutella                             sipsak
+gtksourceview3                           siril
+gtranslator                              skaffold
+gupnp                                    skopeo
+gupnp-av                                 sleuthkit
+gupnp-tools                              smali
+gx                                       smimesign
+h3                                       sn0int
+hadolint                                 snapcraft
+hadoop                                   snort
+hana                                     socat
+hapi-fhir-cli                            solr
+haproxy                                  solr@7.7
+harfbuzz                                 sonarqube
+hatari                                   sonobuoy
+hbase                                    sops
+hdf5                                     source-to-image
+hdf5@1.8                                 sourcekitten
+hebcal                                   sourcery
+heimdal                                  spades
+helmfile                                 sparse
+hexyl                                    sphinx-doc
+hfstospell                               spin
+highlight                                spirv-cross
+hivemind                                 sqlcipher
+hledger                                  sqldiff
+hlint                                    sqlite-analyzer
+homebank                                 sqlmap
+hopenpgp-tools                           sratom
+howdoi                                   srt
+htmlcxx                                  ssh-copy-id
+http-parser                              sshguard
+httpd                                    sshtrix
+hub                                      sslh
+hugo                                     ssllabs-scan
+hydra                                    sslscan
+hyperscan                                stellar-core
+hypre                                    step
+i2p                                      stk
+i2pd                                     stout
+iamy                                     streamlink
+ibex                                     strongswan
+icu4c                                    stubby
+idnits                                   stunnel
+igv                                      subversion
+ilmbase                                  suite-sparse
+imagemagick                              sundials
+imagemagick@6                            superlu
+imageoptim-cli                           supervisor
+imake                                    svgo
+imapsync                                 swagger-codegen
+influxdb                                 swagger-codegen@2
+iniparser                                swi-prolog
+interactive-rebase-tool                  swift-protobuf
+ios-sim                                  swiftformat
+ios-webkit-debug-proxy                   swiftlint
+iozone                                   swig
+ipbt                                     swimat
+ipfs                                     sync_gateway
+ipv6calc                                 syncthing
+ipython                                  synfig
+ircii                                    sysbench
+isl                                      talloc
+ispc                                     tarantool
+istioctl                                 taskell
+itstool                                  tass64
+ivykis                                   tbb
+jailkit                                  tcpreplay
+jbig2dec                                 tcsh
+jdnssec-tools                            tdlib
+jdupes                                   tectonic
+jemalloc                                 telegraf
+jena                                     teleport
+jenkins                                  terraform
+jenkins-job-builder                      terraform_landscape
+jenkins-lts                              terraforming
+jetty                                    terragrunt
+jfrog-cli-go                             testssl
+jhiccup                                  texmath
+jhipster                                 tgui
+jid                                      thors-serializer
+jmeter                                   tika
+jmxterm                                  tile38
+john                                     tippecanoe
+joplin                                   tkdiff
+jp2a                                     tmux
+jruby                                    tmuxinator-completion
+jsdoc3                                   tokei
+json-fortran                             tomcat
+json_spirit                              tomcat@7
+jsonnet                                  tomcat@8
+jsonschema2pojo                          tomee-plus
+juju                                     tomee-webprofile
+jump                                     topgrade
+just                                     tor
+kafka                                    torsocks
+kafkacat                                 traefik
+khal                                     trafficserver
+khard                                    translate-shell
+kibana                                   travis
+kibana@5.6                               treefrog
+kitchen-sync                             trezor-agent
+klavaro                                  triton
+knot                                     ttfautohint
+knot-resolver                            ttyd
+kobalt                                   tundra
+kops                                     txr
+kore                                     typescript
+kotlin                                   ucloud
+krakend                                  uhd
+krb5                                     ultralist
+kube-aws                                 unbound
+kubecfg                                  uncrustify
+kubeless                                 ungit
+kubeprod                                 unp64
+kubernetes-cli                           unrar
+kubernetes-helm                          urbit
+kubernetes-service-catalog-client        urdfdom_headers
+kyoto-cabinet                            utf8proc
+kyoto-tycoon                             util-linux
+landscaper                               v8
+languagetool                             vala
+lapack                                   vapoursynth
+lasi                                     varnish
+lastpass-cli                             vault
+laszip                                   vault-cli
+latex2html                               vcdimager
+latexml                                  vegeta
+lbdb                                     velero
+lcdf-typetools                           verilator
+ldc                                      vert.x
+ledger                                   vim
+lego                                     vim@7.4
+leveldb                                  vips
+lf                                       visp
+lgogdownloader                           vte3
+libatomic_ops                            vtk
+libb2                                    vulkan-headers
+libbluray                                wabt
+libcddb                                  wartremover
+libcdio                                  watchexec
+libcdr                                   weaver
+libchamplain                             webdis
+libcoap                                  webpack
+libcroco                                 websocat
+libdap                                   websocketd
+libdazzle                                weechat
+libdc1394                                wget
+libebml                                  whois
+libedit                                  widelands
+liberasurecode                           wine
+libestr                                  wiredtiger
+libetonyek                               wireguard-go
+libevent                                 wireguard-tools
+libfabric                                wiremock-standalone
+libfixbuf                                wireshark
+libgaiagraphics                          wp-cli
+libgda                                   wp-cli-completion
+libgeotiff                               wtf
+libgit2                                  wxmaxima
+libgit2-glib                             wxpython
+libgsf                                   xcodegen
+libical                                  xctool
+libiconv                                 xmake
+libidn2                                  xmrig
+libimagequant                            xonsh
+libjson-rpc-cpp                          xpdf
+libjwt                                   xplanet
+liblas                                   xsimd
+liblcf                                   yaf
+liblinear                                yara
+libltc                                   yarn
+libmagic                                 yaz
+libmatroska                              yelp-tools
+libmicrohttpd                            ykman
+libmspub                                 yle-dl
+libmtp                                   you-get
+libmwaw                                  youtube-dl
+libnfs                                   yq
+libnice                                  yubico-piv-tool
+libnotify                                z3
+libntlm                                  zabbix
+libodfgen                                zebra
+libofx                                   zig
+libomp                                   zim
+libopenmpt                               znc
+libphonenumber                           zola
+libpng                                   zorba
+libpq                                    zstd
+libpqxx                                  zurl
+libprotoident
+==> Deleted Formulae
+compose2kube        js-test-driver      rlvm                typesafe-activator
+erlang@18           minisat             ruby@2.3            whirr
+gtk-engines         node@6              safe                xmoto
+gtk-murrine-engine  pdftoedn            tomcat@6
+[20:12] mgauriau@Mac-mini-de-M:htdocs $ brew install node git
+Warning: git 2.21.0 is already installed, it's just not linked
+You can use `brew link git` to link this version.
+==> Installing dependencies for node: icu4c
+==> Installing node dependency: icu4c
+==> Downloading https://homebrew.bintray.com/bottles/icu4c-64.2.mojave.bottle.ta
+==> Downloading from https://akamai.bintray.com/e8/e858556120acc0c2d52b8fb572b67
+######################################################################## 100.0%
+==> Pouring icu4c-64.2.mojave.bottle.tar.gz
+==> Caveats
+icu4c is keg-only, which means it was not symlinked into /usr/local,
+because macOS provides libicucore.dylib (but nothing else).
+
+If you need to have icu4c first in your PATH run:
+  echo 'export PATH="/usr/local/opt/icu4c/bin:$PATH"' >> ~/.bash_profile
+  echo 'export PATH="/usr/local/opt/icu4c/sbin:$PATH"' >> ~/.bash_profile
+
+For compilers to find icu4c you may need to set:
+  export LDFLAGS="-L/usr/local/opt/icu4c/lib"
+  export CPPFLAGS="-I/usr/local/opt/icu4c/include"
+
+==> Summary
+🍺  /usr/local/Cellar/icu4c/64.2: 257 files, 69.2MB
+==> Installing node
+==> Downloading https://homebrew.bintray.com/bottles/node-12.3.1.mojave.bottle.t
+==> Downloading from https://akamai.bintray.com/4d/4ded0c82859da5c88b37e4295e95d
+######################################################################## 100.0%
+==> Pouring node-12.3.1.mojave.bottle.tar.gz
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink bin/node
+Target /usr/local/bin/node
+already exists. You may want to remove it:
+  rm '/usr/local/bin/node'
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite node
+
+To list all files that would be deleted:
+  brew link --overwrite --dry-run node
+
+Possible conflicting files are:
+/usr/local/bin/node
+/usr/local/include/node/common.gypi
+/usr/local/include/node/config.gypi
+/usr/local/include/node/libplatform/libplatform.h
+/usr/local/include/node/node.h
+/usr/local/include/node/node_buffer.h
+/usr/local/include/node/node_object_wrap.h
+/usr/local/include/node/node_version.h
+/usr/local/include/node/openssl/aes.h
+/usr/local/include/node/openssl/asn1.h
+/usr/local/include/node/openssl/asn1_mac.h
+/usr/local/include/node/openssl/asn1t.h
+/usr/local/include/node/openssl/bio.h
+/usr/local/include/node/openssl/blowfish.h
+/usr/local/include/node/openssl/bn.h
+/usr/local/include/node/openssl/buffer.h
+/usr/local/include/node/openssl/camellia.h
+/usr/local/include/node/openssl/cast.h
+/usr/local/include/node/openssl/cmac.h
+/usr/local/include/node/openssl/cms.h
+/usr/local/include/node/openssl/comp.h
+/usr/local/include/node/openssl/conf.h
+/usr/local/include/node/openssl/conf_api.h
+/usr/local/include/node/openssl/crypto.h
+/usr/local/include/node/openssl/des.h
+/usr/local/include/node/openssl/dh.h
+/usr/local/include/node/openssl/dsa.h
+/usr/local/include/node/openssl/dtls1.h
+/usr/local/include/node/openssl/e_os2.h
+/usr/local/include/node/openssl/ebcdic.h
+/usr/local/include/node/openssl/ec.h
+/usr/local/include/node/openssl/ecdh.h
+/usr/local/include/node/openssl/ecdsa.h
+/usr/local/include/node/openssl/engine.h
+/usr/local/include/node/openssl/err.h
+/usr/local/include/node/openssl/evp.h
+/usr/local/include/node/openssl/hmac.h
+/usr/local/include/node/openssl/idea.h
+/usr/local/include/node/openssl/lhash.h
+/usr/local/include/node/openssl/md4.h
+/usr/local/include/node/openssl/md5.h
+/usr/local/include/node/openssl/mdc2.h
+/usr/local/include/node/openssl/modes.h
+/usr/local/include/node/openssl/obj_mac.h
+/usr/local/include/node/openssl/objects.h
+/usr/local/include/node/openssl/ocsp.h
+/usr/local/include/node/openssl/opensslconf.h
+/usr/local/include/node/openssl/opensslv.h
+/usr/local/include/node/openssl/ossl_typ.h
+/usr/local/include/node/openssl/pem.h
+/usr/local/include/node/openssl/pem2.h
+/usr/local/include/node/openssl/pkcs12.h
+/usr/local/include/node/openssl/pkcs7.h
+/usr/local/include/node/openssl/rand.h
+/usr/local/include/node/openssl/rc2.h
+/usr/local/include/node/openssl/rc4.h
+/usr/local/include/node/openssl/ripemd.h
+/usr/local/include/node/openssl/rsa.h
+/usr/local/include/node/openssl/safestack.h
+/usr/local/include/node/openssl/seed.h
+/usr/local/include/node/openssl/sha.h
+/usr/local/include/node/openssl/srp.h
+/usr/local/include/node/openssl/srtp.h
+/usr/local/include/node/openssl/ssl.h
+/usr/local/include/node/openssl/ssl2.h
+/usr/local/include/node/openssl/ssl3.h
+/usr/local/include/node/openssl/stack.h
+/usr/local/include/node/openssl/symhacks.h
+/usr/local/include/node/openssl/tls1.h
+/usr/local/include/node/openssl/ts.h
+/usr/local/include/node/openssl/txt_db.h
+/usr/local/include/node/openssl/ui.h
+/usr/local/include/node/openssl/whrlpool.h
+/usr/local/include/node/openssl/x509.h
+/usr/local/include/node/openssl/x509_vfy.h
+/usr/local/include/node/openssl/x509v3.h
+/usr/local/include/node/uv.h
+/usr/local/include/node/v8-platform.h
+/usr/local/include/node/v8-profiler.h
+/usr/local/include/node/v8-testing.h
+/usr/local/include/node/v8-util.h
+/usr/local/include/node/v8-version.h
+/usr/local/include/node/v8.h
+/usr/local/include/node/v8config.h
+/usr/local/include/node/zconf.h
+/usr/local/include/node/zlib.h
+/usr/local/share/doc/node/gdbinit
+/usr/local/share/man/man1/node.1
+/usr/local/share/systemtap/tapset/node.stp
+/usr/local/lib/dtrace/node.d
+Warning: The post-install step did not complete successfully
+You can try again using `brew postinstall node`
+==> Caveats
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+==> Summary
+🍺  /usr/local/Cellar/node/12.3.1: 4,505 files, 53.8MB
+==> `brew cleanup` has not been run in 30 days, running now...
+Removing: /Users/mgauriau/Library/Caches/Homebrew/pcre2--10.32.mojave.bottle.tar.gz... (1.8MB)
+Removing: /Users/mgauriau/Library/Logs/Homebrew/gettext... (64B)
+Removing: /Users/mgauriau/Library/Logs/Homebrew/pcre2... (64B)
+Removing: /Users/mgauriau/Library/Logs/Homebrew/git... (64B)
+==> Caveats
+==> icu4c
+icu4c is keg-only, which means it was not symlinked into /usr/local,
+because macOS provides libicucore.dylib (but nothing else).
+
+If you need to have icu4c first in your PATH run:
+  echo 'export PATH="/usr/local/opt/icu4c/bin:$PATH"' >> ~/.bash_profile
+  echo 'export PATH="/usr/local/opt/icu4c/sbin:$PATH"' >> ~/.bash_profile
+
+For compilers to find icu4c you may need to set:
+  export LDFLAGS="-L/usr/local/opt/icu4c/lib"
+  export CPPFLAGS="-I/usr/local/opt/icu4c/include"
+
+==> node
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+[20:14] mgauriau@Mac-mini-de-M:htdocs $ brew postinstall node
+==> Postinstalling node
+Warning: The post-install step did not complete successfully
+You can try again using `brew postinstall node`
+[20:15] mgauriau@Mac-mini-de-M:htdocs $ brew postinstall node
+==> Postinstalling node
+Warning: The post-install step did not complete successfully
+You can try again using `brew postinstall node`
+[20:15] mgauriau@Mac-mini-de-M:htdocs $ brew link --overwrite --dry-run node
+Would remove:
+/usr/local/bin/node
+/usr/local/include/node/common.gypi
+/usr/local/include/node/config.gypi
+/usr/local/include/node/libplatform/libplatform.h
+/usr/local/include/node/node.h
+/usr/local/include/node/node_buffer.h
+/usr/local/include/node/node_object_wrap.h
+/usr/local/include/node/node_version.h
+/usr/local/include/node/openssl/aes.h
+/usr/local/include/node/openssl/asn1.h
+/usr/local/include/node/openssl/asn1_mac.h
+/usr/local/include/node/openssl/asn1t.h
+/usr/local/include/node/openssl/bio.h
+/usr/local/include/node/openssl/blowfish.h
+/usr/local/include/node/openssl/bn.h
+/usr/local/include/node/openssl/buffer.h
+/usr/local/include/node/openssl/camellia.h
+/usr/local/include/node/openssl/cast.h
+/usr/local/include/node/openssl/cmac.h
+/usr/local/include/node/openssl/cms.h
+/usr/local/include/node/openssl/comp.h
+/usr/local/include/node/openssl/conf.h
+/usr/local/include/node/openssl/conf_api.h
+/usr/local/include/node/openssl/crypto.h
+/usr/local/include/node/openssl/des.h
+/usr/local/include/node/openssl/dh.h
+/usr/local/include/node/openssl/dsa.h
+/usr/local/include/node/openssl/dtls1.h
+/usr/local/include/node/openssl/e_os2.h
+/usr/local/include/node/openssl/ebcdic.h
+/usr/local/include/node/openssl/ec.h
+/usr/local/include/node/openssl/ecdh.h
+/usr/local/include/node/openssl/ecdsa.h
+/usr/local/include/node/openssl/engine.h
+/usr/local/include/node/openssl/err.h
+/usr/local/include/node/openssl/evp.h
+/usr/local/include/node/openssl/hmac.h
+/usr/local/include/node/openssl/idea.h
+/usr/local/include/node/openssl/lhash.h
+/usr/local/include/node/openssl/md4.h
+/usr/local/include/node/openssl/md5.h
+/usr/local/include/node/openssl/mdc2.h
+/usr/local/include/node/openssl/modes.h
+/usr/local/include/node/openssl/obj_mac.h
+/usr/local/include/node/openssl/objects.h
+/usr/local/include/node/openssl/ocsp.h
+/usr/local/include/node/openssl/opensslconf.h
+/usr/local/include/node/openssl/opensslv.h
+/usr/local/include/node/openssl/ossl_typ.h
+/usr/local/include/node/openssl/pem.h
+/usr/local/include/node/openssl/pem2.h
+/usr/local/include/node/openssl/pkcs12.h
+/usr/local/include/node/openssl/pkcs7.h
+/usr/local/include/node/openssl/rand.h
+/usr/local/include/node/openssl/rc2.h
+/usr/local/include/node/openssl/rc4.h
+/usr/local/include/node/openssl/ripemd.h
+/usr/local/include/node/openssl/rsa.h
+/usr/local/include/node/openssl/safestack.h
+/usr/local/include/node/openssl/seed.h
+/usr/local/include/node/openssl/sha.h
+/usr/local/include/node/openssl/srp.h
+/usr/local/include/node/openssl/srtp.h
+/usr/local/include/node/openssl/ssl.h
+/usr/local/include/node/openssl/ssl2.h
+/usr/local/include/node/openssl/ssl3.h
+/usr/local/include/node/openssl/stack.h
+/usr/local/include/node/openssl/symhacks.h
+/usr/local/include/node/openssl/tls1.h
+/usr/local/include/node/openssl/ts.h
+/usr/local/include/node/openssl/txt_db.h
+/usr/local/include/node/openssl/ui.h
+/usr/local/include/node/openssl/whrlpool.h
+/usr/local/include/node/openssl/x509.h
+/usr/local/include/node/openssl/x509_vfy.h
+/usr/local/include/node/openssl/x509v3.h
+/usr/local/include/node/uv.h
+/usr/local/include/node/v8-platform.h
+/usr/local/include/node/v8-profiler.h
+/usr/local/include/node/v8-testing.h
+/usr/local/include/node/v8-util.h
+/usr/local/include/node/v8-version.h
+/usr/local/include/node/v8.h
+/usr/local/include/node/v8config.h
+/usr/local/include/node/zconf.h
+/usr/local/include/node/zlib.h
+/usr/local/share/doc/node/gdbinit
+/usr/local/share/man/man1/node.1
+/usr/local/share/systemtap/tapset/node.stp
+/usr/local/lib/dtrace/node.d
+[20:18] mgauriau@Mac-mini-de-M:htdocs $ node -v
+v4.6.1
+[20:18] mgauriau@Mac-mini-de-M:htdocs $ brew link --overwrite
+Usage: brew ln, link [options] formula
+
+Symlink all of formula's installed files into the Homebrew prefix. This is
+done automatically when you install formulae but can be useful for DIY
+installations.
+
+        --overwrite                  Delete files already existing in the prefix
+                                     while linking.
+    -n, --dry-run                    List all files which would be linked or
+                                     deleted by brew link --overwrite, but
+                                     will not actually link or delete any files.
+    -f, --force                      Allow only key-only formulae to be linked.
+    -v, --verbose                    Make some output more verbose.
+    -d, --debug                      Display any debugging information.
+    -h, --help                       Show this message.
+
+Error: Invalid usage: This command requires a keg argument
+[20:19] mgauriau@Mac-mini-de-M:htdocs $ rm '/usr/local/bin/node'
+override rwxrwxr-x  root/wheel for /usr/local/bin/node? y
+[20:24] mgauriau@Mac-mini-de-M:htdocs $ brew postinstall node
+==> Postinstalling node
+Warning: The post-install step did not complete successfully
+You can try again using `brew postinstall node`
+[20:24] mgauriau@Mac-mini-de-M:htdocs $ brew postinstall node
+==> Postinstalling node
+Warning: The post-install step did not complete successfully
+You can try again using `brew postinstall node`
+[20:24] mgauriau@Mac-mini-de-M:htdocs $ brew install node git
+Warning: node 12.3.1 is already installed, it's just not linked
+You can use `brew link node` to link this version.
+Warning: git 2.21.0 is already installed, it's just not linked
+You can use `brew link git` to link this version.
+[20:24] mgauriau@Mac-mini-de-M:htdocs $ brew link node
+Linking /usr/local/Cellar/node/12.3.1...
+Error: Could not symlink include/node/common.gypi
+Target /usr/local/include/node/common.gypi
+already exists. You may want to remove it:
+  rm '/usr/local/include/node/common.gypi'
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite node
+
+To list all files that would be deleted:
+  brew link --overwrite --dry-run node
+[20:26] mgauriau@Mac-mini-de-M:htdocs $ rm '/usr/local/include/node/common.gypi'[20:27] mgauriau@Mac-mini-de-M:htdocs $ brew link node
+Linking /usr/local/Cellar/node/12.3.1...
+Error: Could not symlink include/node/config.gypi
+Target /usr/local/include/node/config.gypi
+already exists. You may want to remove it:
+  rm '/usr/local/include/node/config.gypi'
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite node
+
+To list all files that would be deleted:
+  brew link --overwrite --dry-run node
+[20:27] mgauriau@Mac-mini-de-M:htdocs $ brew remove node
+Uninstalling /usr/local/Cellar/node/12.3.1... (4,505 files, 53.8MB)
+[20:27] mgauriau@Mac-mini-de-M:htdocs $ brew doctor
+Please note that these warnings are just used to help the Homebrew maintainers
+with debugging if you file an issue. If everything you use Homebrew for is
+working fine: please don't worry or file an issue; just ignore this. Thanks!
+
+Warning: A newer Command Line Tools release is available.
+Update them from Software Update in System Preferences.
+
+
+Warning: "config" scripts exist outside your system or Homebrew directories.
+`./configure` scripts often look for *-config scripts to determine if
+software packages are installed, and which additional flags to use when
+compiling and linking.
+
+Having additional scripts in your path can confuse software installed via
+Homebrew if the config script overrides a system or Homebrew-provided
+script of the same name. We found the following "config" scripts:
+  /Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7-config
+  /Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7m-config
+  /Library/Frameworks/Python.framework/Versions/3.7/bin/python3-config
+
+Warning: Unbrewed header files were found in /usr/local/include.
+If you didn't put them there on purpose they could cause problems when
+building Homebrew formulae, and may need to be deleted.
+
+Unexpected header files:
+  /usr/local/include/node/android-ifaddrs.h
+  /usr/local/include/node/ares.h
+  /usr/local/include/node/ares_version.h
+  /usr/local/include/node/libplatform/libplatform.h
+  /usr/local/include/node/nameser.h
+  /usr/local/include/node/node.h
+  /usr/local/include/node/node_buffer.h
+  /usr/local/include/node/node_object_wrap.h
+  /usr/local/include/node/node_version.h
+  /usr/local/include/node/openssl/aes.h
+  /usr/local/include/node/openssl/archs/BSD-x86/opensslconf.h
+  /usr/local/include/node/openssl/archs/BSD-x86_64/opensslconf.h
+  /usr/local/include/node/openssl/archs/VC-WIN32/opensslconf.h
+  /usr/local/include/node/openssl/archs/VC-WIN64A/opensslconf.h
+  /usr/local/include/node/openssl/archs/aix-gcc/opensslconf.h
+  /usr/local/include/node/openssl/archs/aix64-gcc/opensslconf.h
+  /usr/local/include/node/openssl/archs/darwin-i386-cc/opensslconf.h
+  /usr/local/include/node/openssl/archs/darwin64-x86_64-cc/opensslconf.h
+  /usr/local/include/node/openssl/archs/linux-aarch64/opensslconf.h
+  /usr/local/include/node/openssl/archs/linux-armv4/opensslconf.h
+  /usr/local/include/node/openssl/archs/linux-elf/opensslconf.h
+  /usr/local/include/node/openssl/archs/linux-ppc/opensslconf.h
+  /usr/local/include/node/openssl/archs/linux-ppc64/opensslconf.h
+  /usr/local/include/node/openssl/archs/linux-x32/opensslconf.h
+  /usr/local/include/node/openssl/archs/linux-x86_64/opensslconf.h
+  /usr/local/include/node/openssl/archs/linux32-s390x/opensslconf.h
+  /usr/local/include/node/openssl/archs/linux64-s390x/opensslconf.h
+  /usr/local/include/node/openssl/archs/solaris-x86-gcc/opensslconf.h
+  /usr/local/include/node/openssl/archs/solaris64-x86_64-gcc/opensslconf.h
+  /usr/local/include/node/openssl/asn1.h
+  /usr/local/include/node/openssl/asn1_mac.h
+  /usr/local/include/node/openssl/asn1t.h
+  /usr/local/include/node/openssl/bio.h
+  /usr/local/include/node/openssl/blowfish.h
+  /usr/local/include/node/openssl/bn.h
+  /usr/local/include/node/openssl/buffer.h
+  /usr/local/include/node/openssl/camellia.h
+  /usr/local/include/node/openssl/cast.h
+  /usr/local/include/node/openssl/cmac.h
+  /usr/local/include/node/openssl/cms.h
+  /usr/local/include/node/openssl/comp.h
+  /usr/local/include/node/openssl/conf.h
+  /usr/local/include/node/openssl/conf_api.h
+  /usr/local/include/node/openssl/crypto.h
+  /usr/local/include/node/openssl/des.h
+  /usr/local/include/node/openssl/des_old.h
+  /usr/local/include/node/openssl/dh.h
+  /usr/local/include/node/openssl/dsa.h
+  /usr/local/include/node/openssl/dso.h
+  /usr/local/include/node/openssl/dtls1.h
+  /usr/local/include/node/openssl/e_os2.h
+  /usr/local/include/node/openssl/ebcdic.h
+  /usr/local/include/node/openssl/ec.h
+  /usr/local/include/node/openssl/ecdh.h
+  /usr/local/include/node/openssl/ecdsa.h
+  /usr/local/include/node/openssl/engine.h
+  /usr/local/include/node/openssl/err.h
+  /usr/local/include/node/openssl/evp.h
+  /usr/local/include/node/openssl/hmac.h
+  /usr/local/include/node/openssl/idea.h
+  /usr/local/include/node/openssl/krb5_asn.h
+  /usr/local/include/node/openssl/kssl.h
+  /usr/local/include/node/openssl/lhash.h
+  /usr/local/include/node/openssl/md4.h
+  /usr/local/include/node/openssl/md5.h
+  /usr/local/include/node/openssl/mdc2.h
+  /usr/local/include/node/openssl/modes.h
+  /usr/local/include/node/openssl/obj_mac.h
+  /usr/local/include/node/openssl/objects.h
+  /usr/local/include/node/openssl/ocsp.h
+  /usr/local/include/node/openssl/opensslconf.h
+  /usr/local/include/node/openssl/opensslv.h
+  /usr/local/include/node/openssl/ossl_typ.h
+  /usr/local/include/node/openssl/pem.h
+  /usr/local/include/node/openssl/pem2.h
+  /usr/local/include/node/openssl/pkcs12.h
+  /usr/local/include/node/openssl/pkcs7.h
+  /usr/local/include/node/openssl/pqueue.h
+  /usr/local/include/node/openssl/rand.h
+  /usr/local/include/node/openssl/rc2.h
+  /usr/local/include/node/openssl/rc4.h
+  /usr/local/include/node/openssl/ripemd.h
+  /usr/local/include/node/openssl/rsa.h
+  /usr/local/include/node/openssl/safestack.h
+  /usr/local/include/node/openssl/seed.h
+  /usr/local/include/node/openssl/sha.h
+  /usr/local/include/node/openssl/srp.h
+  /usr/local/include/node/openssl/srtp.h
+  /usr/local/include/node/openssl/ssl.h
+  /usr/local/include/node/openssl/ssl2.h
+  /usr/local/include/node/openssl/ssl23.h
+  /usr/local/include/node/openssl/ssl3.h
+  /usr/local/include/node/openssl/stack.h
+  /usr/local/include/node/openssl/symhacks.h
+  /usr/local/include/node/openssl/tls1.h
+  /usr/local/include/node/openssl/ts.h
+  /usr/local/include/node/openssl/txt_db.h
+  /usr/local/include/node/openssl/ui.h
+  /usr/local/include/node/openssl/ui_compat.h
+  /usr/local/include/node/openssl/whrlpool.h
+  /usr/local/include/node/openssl/x509.h
+  /usr/local/include/node/openssl/x509_vfy.h
+  /usr/local/include/node/openssl/x509v3.h
+  /usr/local/include/node/pthread-barrier.h
+  /usr/local/include/node/pthread-fixes.h
+  /usr/local/include/node/stdint-msvc2008.h
+  /usr/local/include/node/tree.h
+  /usr/local/include/node/uv-aix.h
+  /usr/local/include/node/uv-bsd.h
+  /usr/local/include/node/uv-darwin.h
+  /usr/local/include/node/uv-errno.h
+  /usr/local/include/node/uv-linux.h
+  /usr/local/include/node/uv-sunos.h
+  /usr/local/include/node/uv-threadpool.h
+  /usr/local/include/node/uv-unix.h
+  /usr/local/include/node/uv-version.h
+  /usr/local/include/node/uv-win.h
+  /usr/local/include/node/uv.h
+  /usr/local/include/node/v8-debug.h
+  /usr/local/include/node/v8-platform.h
+  /usr/local/include/node/v8-profiler.h
+  /usr/local/include/node/v8-testing.h
+  /usr/local/include/node/v8-util.h
+  /usr/local/include/node/v8-version.h
+  /usr/local/include/node/v8.h
+  /usr/local/include/node/v8config.h
+  /usr/local/include/node/zconf.h
+  /usr/local/include/node/zlib.h
+
+Warning: You have unlinked kegs in your Cellar.
+Leaving kegs unlinked can lead to build-trouble and cause brews that depend on
+those kegs to fail to run properly once built. Run `brew link` on these:
+  git
+
+Warning: An outdated version (2.10.1) of Git was detected in your PATH.
+Git 2.14.3 or newer is required for Homebrew.
+Please upgrade:
+  brew upgrade git
+[20:28] mgauriau@Mac-mini-de-M:htdocs $ brew upgrade git
+Error: git 2.21.0 already installed
+[20:28] mgauriau@Mac-mini-de-M:htdocs $ brew install node git
+Warning: git 2.21.0 is already installed, it's just not linked
+You can use `brew link git` to link this version.
+==> Downloading https://homebrew.bintray.com/bottles/node-12.3.1.mojave.bottle.t
+Already downloaded: /Users/mgauriau/Library/Caches/Homebrew/downloads/203ef81b3f4348bd7272a7171c3b18d5f3e43e11359ebd80599afc343dd3195a--node-12.3.1.mojave.bottle.tar.gz
+==> Pouring node-12.3.1.mojave.bottle.tar.gz
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink include/node/config.gypi
+Target /usr/local/include/node/config.gypi
+already exists. You may want to remove it:
+  rm '/usr/local/include/node/config.gypi'
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite node
+
+To list all files that would be deleted:
+  brew link --overwrite --dry-run node
+
+Possible conflicting files are:
+/usr/local/include/node/config.gypi
+/usr/local/include/node/libplatform/libplatform.h
+/usr/local/include/node/node.h
+/usr/local/include/node/node_buffer.h
+/usr/local/include/node/node_object_wrap.h
+/usr/local/include/node/node_version.h
+/usr/local/include/node/openssl/aes.h
+/usr/local/include/node/openssl/asn1.h
+/usr/local/include/node/openssl/asn1_mac.h
+/usr/local/include/node/openssl/asn1t.h
+/usr/local/include/node/openssl/bio.h
+/usr/local/include/node/openssl/blowfish.h
+/usr/local/include/node/openssl/bn.h
+/usr/local/include/node/openssl/buffer.h
+/usr/local/include/node/openssl/camellia.h
+/usr/local/include/node/openssl/cast.h
+/usr/local/include/node/openssl/cmac.h
+/usr/local/include/node/openssl/cms.h
+/usr/local/include/node/openssl/comp.h
+/usr/local/include/node/openssl/conf.h
+/usr/local/include/node/openssl/conf_api.h
+/usr/local/include/node/openssl/crypto.h
+/usr/local/include/node/openssl/des.h
+/usr/local/include/node/openssl/dh.h
+/usr/local/include/node/openssl/dsa.h
+/usr/local/include/node/openssl/dtls1.h
+/usr/local/include/node/openssl/e_os2.h
+/usr/local/include/node/openssl/ebcdic.h
+/usr/local/include/node/openssl/ec.h
+/usr/local/include/node/openssl/ecdh.h
+/usr/local/include/node/openssl/ecdsa.h
+/usr/local/include/node/openssl/engine.h
+/usr/local/include/node/openssl/err.h
+/usr/local/include/node/openssl/evp.h
+/usr/local/include/node/openssl/hmac.h
+/usr/local/include/node/openssl/idea.h
+/usr/local/include/node/openssl/lhash.h
+/usr/local/include/node/openssl/md4.h
+/usr/local/include/node/openssl/md5.h
+/usr/local/include/node/openssl/mdc2.h
+/usr/local/include/node/openssl/modes.h
+/usr/local/include/node/openssl/obj_mac.h
+/usr/local/include/node/openssl/objects.h
+/usr/local/include/node/openssl/ocsp.h
+/usr/local/include/node/openssl/opensslconf.h
+/usr/local/include/node/openssl/opensslv.h
+/usr/local/include/node/openssl/ossl_typ.h
+/usr/local/include/node/openssl/pem.h
+/usr/local/include/node/openssl/pem2.h
+/usr/local/include/node/openssl/pkcs12.h
+/usr/local/include/node/openssl/pkcs7.h
+/usr/local/include/node/openssl/rand.h
+/usr/local/include/node/openssl/rc2.h
+/usr/local/include/node/openssl/rc4.h
+/usr/local/include/node/openssl/ripemd.h
+/usr/local/include/node/openssl/rsa.h
+/usr/local/include/node/openssl/safestack.h
+/usr/local/include/node/openssl/seed.h
+/usr/local/include/node/openssl/sha.h
+/usr/local/include/node/openssl/srp.h
+/usr/local/include/node/openssl/srtp.h
+/usr/local/include/node/openssl/ssl.h
+/usr/local/include/node/openssl/ssl2.h
+/usr/local/include/node/openssl/ssl3.h
+/usr/local/include/node/openssl/stack.h
+/usr/local/include/node/openssl/symhacks.h
+/usr/local/include/node/openssl/tls1.h
+/usr/local/include/node/openssl/ts.h
+/usr/local/include/node/openssl/txt_db.h
+/usr/local/include/node/openssl/ui.h
+/usr/local/include/node/openssl/whrlpool.h
+/usr/local/include/node/openssl/x509.h
+/usr/local/include/node/openssl/x509_vfy.h
+/usr/local/include/node/openssl/x509v3.h
+/usr/local/include/node/uv.h
+/usr/local/include/node/v8-platform.h
+/usr/local/include/node/v8-profiler.h
+/usr/local/include/node/v8-testing.h
+/usr/local/include/node/v8-util.h
+/usr/local/include/node/v8-version.h
+/usr/local/include/node/v8.h
+/usr/local/include/node/v8config.h
+/usr/local/include/node/zconf.h
+/usr/local/include/node/zlib.h
+/usr/local/share/doc/node/gdbinit
+/usr/local/share/man/man1/node.1
+/usr/local/share/systemtap/tapset/node.stp
+/usr/local/lib/dtrace/node.d
+Warning: The post-install step did not complete successfully
+You can try again using `brew postinstall node`
+==> Caveats
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+==> Summary
+🍺  /usr/local/Cellar/node/12.3.1: 4,505 files, 53.8MB
+[20:33] mgauriau@Mac-mini-de-M:htdocs $ brew postinstall node
+==> Postinstalling node
+Warning: The post-install step did not complete successfully
+You can try again using `brew postinstall node`
+[20:33] mgauriau@Mac-mini-de-M:htdocs $ brew postinstall node
+==> Postinstalling node
+Warning: The post-install step did not complete successfully
+You can try again using `brew postinstall node`
+[20:33] mgauriau@Mac-mini-de-M:htdocs $ rm '/usr/local/bin/node'
+rm: /usr/local/bin/node: No such file or directory
+[20:34] mgauriau@Mac-mini-de-M:htdocs $ brew install node git
+Warning: node 12.3.1 is already installed, it's just not linked
+You can use `brew link node` to link this version.
+Warning: git 2.21.0 is already installed, it's just not linked
+You can use `brew link git` to link this version.
+[20:34] mgauriau@Mac-mini-de-M:htdocs $ brew link git
+Linking /usr/local/Cellar/git/2.21.0...
+Error: Could not symlink bin/git
+Target /usr/local/bin/git
+already exists. You may want to remove it:
+  rm '/usr/local/bin/git'
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite git
+
+To list all files that would be deleted:
+  brew link --overwrite --dry-run git
+[20:34] mgauriau@Mac-mini-de-M:htdocs $ brew link --overwrite git
+Linking /usr/local/Cellar/git/2.21.0... 205 symlinks created
+[20:35] mgauriau@Mac-mini-de-M:htdocs $ node -v
+-bash: /usr/local/bin/node: No such file or directory
+[20:35] mgauriau@Mac-mini-de-M:htdocs $ brew install node git
+Warning: node 12.3.1 is already installed, it's just not linked
+You can use `brew link node` to link this version.
+Warning: git 2.21.0 is already installed and up-to-date
+To reinstall 2.21.0, run `brew reinstall git`
+[20:35] mgauriau@Mac-mini-de-M:htdocs $ brew link node
+Linking /usr/local/Cellar/node/12.3.1...
+Error: Could not symlink include/node/config.gypi
+Target /usr/local/include/node/config.gypi
+already exists. You may want to remove it:
+  rm '/usr/local/include/node/config.gypi'
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite node
+
+To list all files that would be deleted:
+  brew link --overwrite --dry-run node
+[20:36] mgauriau@Mac-mini-de-M:htdocs $ brew link --overwrite node
+Linking /usr/local/Cellar/node/12.3.1...
+Error: Could not symlink share/doc/node/gdbinit
+/usr/local/share/doc/node is not writable.
+[20:36] mgauriau@Mac-mini-de-M:htdocs $ sudo chown -R $USER /usr/local
+Password:
+chown: /usr/local: Operation not permitted
+[20:37] mgauriau@Mac-mini-de-M:htdocs $ sudo chown -R $USER /usr/local
+chown: /usr/local: Operation not permitted
+[20:37] mgauriau@Mac-mini-de-M:htdocs $ brew link --overwrite node
+Linking /usr/local/Cellar/node/12.3.1... 202 symlinks created
+[20:37] mgauriau@Mac-mini-de-M:htdocs $
