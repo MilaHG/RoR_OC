@@ -1,0 +1,310 @@
+mémo
+lancer le serveur
+<cmd>
+    rails server
+    OU
+    rails s
+
+==> localhost:3000
+
+1. créer une page
+<cmd>
+    rails generate controller pages home
+
+==> localhost:3000/pages/home
+
+2. maniez les contrôleurs et les variables
+Parmi les fichiers générés dans le chapitre précédent, ouvrez avec votre éditeur de texte le fichier app/controllers/pages_controller.rb
+Le code situé à l’intérieur de ce fichier s’exécutera avant le HTML de notre fichier app/views/pages/home.html.erb.
+
+Testez le code suivant en assignant la valeur 4 à une variable dans ce fichier :
+
+        class PagesController < ApplicationController
+          def home
+            @variable = 4
+          end
+        end
+
+Et dans la vue app/views/pages/home.html.erb :
+
+        <h1>Bienvenue !</h1>
+        <p>Ceci est ma première variable : <%= @variable %>.</p>
+
+Lancez le serveur et affichez la page dans votre navigateur. Vous verrez « 4 » apparaître.
+
+Les symboles « <% … %> » permettent d’exécuter du Ruby, et le symbole « = » est un raccourci pour puts. Dans notre cas, nous affichons une variable définie dans la fonction home du contrôleur PagesController. Dans un contrôleur, seules les variables commençant par arobase (@) sont accessibles depuis la vue.
+
+On dit que la classe PagesController est un contrôleur (controller en anglais). Un contrôleur est un fichier qui s’exécute juste avant une vue.
+
+3. Mettez des conditions et des boucles dans les vues
+Vous avez vu comment afficher une variable dans les vues. Juste avec cela, vous ne ferez pas grand chose.
+
+Voici comment faire une condition dans la vue :
+
+        <h1>Bienvenue !</h1>
+        <p>Ceci est ma première variable : <%= @variable %>.</p>
+
+        <% if @variable == 42 %>
+          Super, la variable vaut 42 !
+        <% else %>
+          Mince, la variable ne vaut pas 42 !
+        <% end %>
+
+Notez l’absence du symbole « = », car ici nos lignes de Ruby ne doivent rien afficher. En effet un IF n'affiche rien, c'est
+le code entre le IF et le ELSE ou celui entre le ELSE et le END qui sera affiché.
+
+Et voici un exemple de boucle :
+
+        <h1>Bienvenue !</h1>
+        <p>Ceci est ma première variable : <%= @variable %>.</p>
+
+        <% @variable.times do |i| %>
+          <%= i %>
+        <% end %>
+
+Qui affichera « 0123 ». Si vous ne comprenez pas pourquoi, je vous invite tester avec irb le code suivant :
+
+        4.times do |i|
+          puts i
+        end
+
+Vous ne vous souvenez plus comment utiliser irb ? Revoyez ce chapitre du cours sur Ruby.
+
+Je vous recommande vivement de mettre le moins de code Ruby possible dans une vue.
+Mettez votre Ruby dans la fonction home du contrôleur, puis mettez le résultat de votre code dans une variable qui commence par @, puis affichez dans la vue la variable en question. C’est plus propre !
+Pour faire simple : mettre le plus possible de Ruby dans les fichiers Ruby, et le moins possible de Ruby dans les fichiers HTML.
+
+
+4. utilisez les routes et les contrôleurs
+
+Faisons le point : vous avez créé une page HTML et vous êtes maintenant capable d’y mettre du Ruby.
+Mais vous ne savez toujours pas :
+   - choisir l’adresse de votre page (vous êtes coincé avec /pages/home) ;
+   - créer d’autres pages.
+
+Ouvrez le fichier config/routes.rb. Vous y trouverez ceci :
+
+        Rails.application.routes.draw do
+          get 'pages/home'
+          # puis plein de commentaires
+          # pages -> c'est le controlleur => app/controllers/pages_controller.rb
+          # home -> c'est le fichier HTML => app/views/pages/home.html.erb
+        end
+
+Le « pages/home » correspond à ce que vous voyez dans l’adresse http://localhost:3000/pages/home.
+Comme Rails est intelligent, il sait que cette adresse va exécuter le code de la fonction home du contrôleur PagesController.
+Mais alors, comment personnaliser cette adresse ? Ou plutôt, pour employer le vocabulaire de Rails : comment personnaliser cette route ?
+
+Il est possible de faire un lien explicite entre la route et le contrôleur à exécuter.
+Par exemple, testez le code suivant :
+
+        Rails.application.routes.draw do
+          get 'castor' => 'pages#home'
+          # puis plein de commentaires
+        end
+
+Allez sur http://localhost:3000/castor. La même page qu’avant s’affiche ! « pages#home » signifie que la route castor doit aller chercher, dans le contrôleur PagesController, la fonction home.
+
+MES FICHIERS [config/routes.rb]
+        Rails.application.routes.draw do
+          # get 'pages/home'
+          # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+          # pages -> c'est le controlleur => app/controllers/pages_controller.rb
+          # home -> c'est le fichier HTML => app/views/pages/home.html.erb
+          # si je laisse en l'état l'url pour afficher cette page est localhost:3000/pages/home
+          # pour changer cela on met en commentaire la ligne 2 (get 'pages/home')
+          # et on réécrit la route :
+          # get 'castor' => 'pages#home'
+          # la page d'accueil 'home' s'affichera avec l'url localhost:3000/castor
+          # si je veux que ma page d'accueil s'affiche directement sans rien après localhost:3000/
+          # on commente la ligne :
+          # get 'castor' => 'pages#home'
+          # get 'route' => 'controlleur#fonction_dans_le_controlleur'
+          # et on utilise le mot clé root :
+          root 'pages#home'
+        end
+
+À vous ! Faites une nouvelle page. Vous avez besoin :
+   - d’une nouvelle fonction dans un contrôleur ;
+   - d’un fichier HTML rangé dans app/views/nom_du_contrôleur/nom_de_la_fonction.html.erb ;
+   - d’une route dans config/routes.rb.
+
+Comment associer l’adresse « http://localhost:3000/ » à une vue ?  Dans le fichier de routes (config/routes.rb), utilisez la fonction root (racine en anglais) :
+
+        Rails.application.routes.draw do
+          root 'pages#home'
+          # puis plein de commentaires
+        end
+
+
+5. Utilisez le layout
+Vous avez maintenant une ou deux pages dans votre application. Pour éviter de répéter toutes les balises HTML obligatoire (doctype, html, head, title…) dans les vues, la structure HTML est partagée dans ce que l’on appelle un layout.
+
+Observez le fichier app/views/layouts/application.html.erb :
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+          <title>Castor</title>
+          <%= stylesheet_link_tag 'application', media: 'all' %>
+          <%= javascript_include_tag 'application' %>
+          <%= csrf_meta_tags %>
+        </head>
+
+        <body>
+          <%= yield %>
+        </body>
+        </html>
+
+        //// MES FICHIERS ////
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <title>Castor</title>
+            <%= csrf_meta_tags %>
+            <%= csp_meta_tag %>
+
+            <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+            <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+          </head>
+
+          <body>
+            <%= yield %>
+          </body>
+        </html>
+
+Le contenu de vos vues viendra s’immiscer à la place de « <%= yield %> ».
+Si vous retirez cette ligne, vos pages ne s’afficheront plus !
+
+Les lignes de Ruby dans le head permettent d’inclure tous vos fichiers CSS et JavaScript dans votre site sans avoir à rajouter une ligne par fichier.
+Pour ajouter du CSS dans votre site, modifiez le fichier app/assets/stylesheets/application.css, ou les autres fichiers de ce même répertoire ;
+
+Pour ajouter du JS dans votre site, modifiez le fichier app/assets/javascripts/application.js, ou les autres fichiers de ce même répertoire.
+
+
+6. Gérer la BDD
+
+6.1 - Créez votre première table
+Avec Ruby on Rails, l’une des premières choses à faire est de réfléchir aux tables dont nous aurons besoin
+pour stocker les données de notre site.
+
+Le projet que nous allons construire ensemble est un gestionnaire de livres à lire.
+Je veux, sur mon site, pouvoir ajouter les livres que je veux lire et retirer ceux que j’ai déjà lus.
+
+Il nous faut donc une table « Livres », où chaque entrée sera un livre en particulier.
+Nous n’avons besoin que d’une colonne, « Titre ».
+Quand je veux ajouter un livre à lire, j’ajoute une entrée ; et quand je l’ai lu, je la supprime.
+
+        _______ books _______
+        | title |
+        |_______|____________
+
+Avant de vous dire comment créer cette table, j’aimerais m’arrêter sur une citation célèbre dans le monde informatique :
+Il n’y a que deux choses difficiles en informatique : l’invalidation du cache et nommer les choses. — Phil Karlton
+
+Laissons l’invalidation du cache de côté, ça ne nous concerne pas. Nommer les choses est moins simple qu’il n’y paraît.
+
+Rails a sa façon de nommer les choses que nous allons suivre.
+Voici les règles concernant les noms des tables et colonnes :
+
+   - tout en anglais, sans accent, en minuscules ;
+   - les espaces sont remplacés par des underscores « _ » ;
+   - le nom des tables doit être le pluriel de ce que représente une entrée ;
+   - le nom des colonnes est au singulier.
+
+Ainsi, Livres devient « books » et Titre devient « title ».
+
+Passons au code ! Dans votre terminal, dans votre répertoire castor, faites :
+
+        rails generate migration TableBooks
+
+Ce qui va générer dans le dossier db/migrate/ le fichier *_table_books.rb, avec la date et l’heure à la place de l’astérisque.
+TableBooks est le nom que l'on choisit de donner à la migration.
+
+Ouvrez ce fichier avec votre éditeur de texte. Il contient actuellement ceci :
+
+        class TableBooks < ActiveRecord::Migration
+          def change
+          end
+        end
+
+On dit que ce fichier ruby est une migration.
+Il permet de changer la structure de votre base de données.
+Changer la structure d’une base de données, c’est ajouter, supprimer ou modifier une table ou une colonne.
+C’est comme remplir la première ligne d’un tableur avec le nom des colonnes.
+Si ces noms changent, il faut faire une (nouvelle) migration pour changer sa structure.
+
+Il n’y a pas besoin de migration si l’on ajoute ou supprime une entrée, comme nos trois utilisateurs de la capture d’écran du chapitre précédent.
+
+Dans une migration, on liste les tables et colonnes à créer (ou supprimer).
+Pour notre application, voici ce que nous devons ajouter à ce fichier :
+
+        class TableBooks < ActiveRecord::Migration
+          def change
+            create_table :books
+            add_column :books, :title, :string
+          end
+        end
+
+Deux étapes :
+    - Nous utilisons la fonction create_table, qui prend pour argument le nom de la table à créer ;
+    - Nous ajoutons une colonne avec la fonction add_column, qui prend trois arguments :
+        . le nom de la table sur laquelle ajouter la colonne,
+        . le nom de la colonne
+        . et son type.
+
+Comme les variables en ruby, les colonnes d’une base de données peuvent être de différentes natures, que l’on appelle types.
+En voici une liste incomplète, à titre indicatif :
+    - string pour les textes de moins de 255 caractères ;
+    - text pour les textes pouvant faire plus de 255 caractères ;
+    - integer pour un nombre sans virgule ;
+    - float pour un nombre à virgule ;
+    - datetime pour une date et heure.
+
+Vous avez écrit votre migration, parfait.
+Maintenant, il faut qu’elle soit prise en compte.
+Sans cela, elle n’aura aucun effet, la table (migration) n'existe pas encore. Pour cela, exécutez la commande suivante :
+
+        rake db:migrate
+
+La commande rake est une boite à outils. Elle permet de faire plein de choses, notamment d’exécuter les migrations pour qu’elles soient prises en compte.
+Une migration ne s’exécute qu’une seule fois. Si vous faites une 2e fois cette commande, il ne se passera rien.
+Ce qui veut dire que si vous avez oublié quelque chose dans votre migration, il vous faudra en générer une autre, dans un nouveau fichier ! Et dans cette autre migration, vous n’aurez pas besoin de répéter ce qui vous avez déjà fait, n’y mettez que ce qu’il vous manque.
+
+Pour exploiter notre base de données avec Rails, pour ajouter et supprimer des lignes, il nous manque un fichier qui fait la liaison entre notre base et notre code.
+Créez le fichier app/models/book.rb avec ce contenu :
+
+        class Book < ActiveRecord::Base
+        end
+
+On dit que ce fichier, ou cette classe, est un modèle. Un modèle est une classe Ruby qui représente une table d’une base de données. Notez comme le nom du modèle est le même que celui de la table, mais au singulier. C’est grâce à cette convention de nommage que Rails fait le rapprochement entre notre classe et notre table.
+
+Pour vérifier que tout va bien, dans le terminal, tapez cette commande :
+
+        rails console
+
+Cette commande est un « super irb ». C’est un irb qui inclut toutes les classes de votre site. Dans la console rails, tapez :
+
+        Book.new (créé une nouvelle instance de la table)
+        ou
+        Book (accède à la classe correspondant aux éléments de la table TableBooks)
+
+Le résultat doit être :
+        #<Book id: nil, title: nil>
+        ou
+        Book(id: integer, title: string)
+
+Rails a bien fait la liaison avec votre base de données, c’est pour cela que l’on voit notre colonne « title » apparaître. Tapez exit pour sortir de la console rails.
+
+--- mémo ---
+Il y a plusieurs « zones » dans lesquelles vous travaillez :
+
+    le terminal, qui sert principalement à lancer des commandes (il suffit des les écrire et d’appuyer sur ↲ Entrée), telles que les rails generate, rake db:migrate, rails server pour voir votre site sur votre navigateur et à lancer la rails console ;
+
+    la rails console, qui sert à exécuter ponctuellement du code pour comprendre comment les choses fonctionnent dans Rails. Cela n’affecte pas votre code source, mais peut affecter les données de votre base ;
+
+    la console ruby irb, qui sert à exécuter ponctuellement du code Ruby. Il est indépendant du code que vous avez écrit, de ce fait il n’intègre pas les fonctionnalités de Rails. Je recommande d’utiliser tout le temps rails console à la place ;
+
+    vos fichiers de code source dans votre éditeur de texte, pour modifier votre site, lui apporter des fonctionnalités et corriger des bugs.
+--- mémo ---
+
