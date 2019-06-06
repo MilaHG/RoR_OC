@@ -1,3 +1,17 @@
+1. créer une page
+2. controlleurs et variables
+3. boucles et conditions dans les vues
+4. routes et controlleurs
+5. le layout
+6. créer une BDD
+    6.1- créer une table
+    6.2- ajouter, modifier, supprimer des lignes
+    6.3- Utiliser les données sur le site
+    6.4- Ajoutez un formulaire de création
+
+
+
+❄️❄️❄️❄️❄️❄️❄️❄️❄️❄
 mémo
 lancer le serveur
 <cmd>
@@ -7,13 +21,20 @@ lancer le serveur
 
 ==> localhost:3000
 
+❄️❄️❄️❄️❄️❄️❄️❄️❄️❄
 1. créer une page
+❄️❄️❄️❄️❄️❄️❄️❄️❄️❄
+
 <cmd>
     rails generate controller pages home
 
 ==> localhost:3000/pages/home
 
+
+❄️❄️❄️❄️❄️❄️❄️❄️❄️❄
 2. maniez les contrôleurs et les variables
+❄️❄️❄️❄️❄️❄️❄️❄️❄️❄
+
 Parmi les fichiers générés dans le chapitre précédent, ouvrez avec votre éditeur de texte le fichier app/controllers/pages_controller.rb
 Le code situé à l’intérieur de ce fichier s’exécutera avant le HTML de notre fichier app/views/pages/home.html.erb.
 
@@ -36,7 +57,11 @@ Les symboles « <% … %> » permettent d’exécuter du Ruby, et le symbole « 
 
 On dit que la classe PagesController est un contrôleur (controller en anglais). Un contrôleur est un fichier qui s’exécute juste avant une vue.
 
+
+❄️❄️❄️❄️❄️❄️❄️❄️❄️❄
 3. Mettez des conditions et des boucles dans les vues
+❄️❄️❄️❄️❄️❄️❄️❄️❄️❄
+
 Vous avez vu comment afficher une variable dans les vues. Juste avec cela, vous ne ferez pas grand chose.
 
 Voici comment faire une condition dans la vue :
@@ -75,7 +100,9 @@ Mettez votre Ruby dans la fonction home du contrôleur, puis mettez le résultat
 Pour faire simple : mettre le plus possible de Ruby dans les fichiers Ruby, et le moins possible de Ruby dans les fichiers HTML.
 
 
+❄️❄️❄️❄️❄️❄️❄️❄️❄️❄
 4. utilisez les routes et les contrôleurs
+❄️❄️❄️❄️❄️❄️❄️❄️❄️❄
 
 Faisons le point : vous avez créé une page HTML et vous êtes maintenant capable d’y mettre du Ruby.
 Mais vous ne savez toujours pas :
@@ -137,7 +164,10 @@ Comment associer l’adresse « http://localhost:3000/ » à une vue ?  Dans le 
         end
 
 
+❄️❄️❄️❄️❄️❄️❄️❄️❄️❄
 5. Utilisez le layout
+❄️❄️❄️❄️❄️❄️❄️❄️❄️❄
+
 Vous avez maintenant une ou deux pages dans votre application. Pour éviter de répéter toutes les balises HTML obligatoire (doctype, html, head, title…) dans les vues, la structure HTML est partagée dans ce que l’on appelle un layout.
 
 Observez le fichier app/views/layouts/application.html.erb :
@@ -182,9 +212,14 @@ Pour ajouter du CSS dans votre site, modifiez le fichier app/assets/stylesheets/
 Pour ajouter du JS dans votre site, modifiez le fichier app/assets/javascripts/application.js, ou les autres fichiers de ce même répertoire.
 
 
+❄️❄️❄️❄️❄️❄️❄️❄️❄️❄
 6. Gérer la BDD
+❄️❄️❄️❄️❄️❄️❄️❄️❄️❄
 
-6.1 - Créez votre première table
+https://sqlitebrowser.org/dl/
+
+    6.1 - Créez votre première table
+
 Avec Ruby on Rails, l’une des premières choses à faire est de réfléchir aux tables dont nous aurons besoin
 pour stocker les données de notre site.
 
@@ -308,3 +343,237 @@ Il y a plusieurs « zones » dans lesquelles vous travaillez :
     vos fichiers de code source dans votre éditeur de texte, pour modifier votre site, lui apporter des fonctionnalités et corriger des bugs.
 --- mémo ---
 
+    6.2- ajouter, modifier et supprimer des lignes
+
+dans rails console (on peut y accéder avec la <cmd> rails console ou en raccourci rails c)
+
+Votre base de données est prête. Votre application Rails est prête. Tout est bon, apprenons à manipuler nos données !
+
+Retournez sur la console rails. Première mission : ajouter une entrée dans notre table. Faites une à une ces commandes :
+
+        mon_livre = Book.new
+        mon_livre.title = "Dictionnaire"
+        mon_livre.save
+        mon_livre
+
+Le résultat à la fin doit être le suivant :
+    #<Book id: 1, title: "Dictionnaire">
+
+Que s’est-il passé ? Book.new permet de créer un nouveau livre. Mais ça ne l’ajoute pas immédiatement dans la base de données. Avant cela, nous le stockons dans une variable et indiquons quel titre nous voulons pour lui. Je l’appelle « Dictionnaire ». C’est au moment du save que l’ajout en base de données est fait.
+
+Quand je fais « mon_livre » tout seul, cela affiche tous ses attributs (comme « title »). Que remarquez-vous ? Il a un « id » à 1. Quand nous créons une table, il y a automatiquement une colonne « id » qui se met en place. Quand vous créez un livre, son id sera 1, puis le suivant 2, etc. Vous n’avez pas à toucher vous-même à cette valeur.
+
+Pour retrouver les livres que vous avez créés, faites :
+
+        Book.all
+
+Bon, lire un dictionnaire n’est pas très cool, changeons son titre pour quelque chose d’autre :
+
+        mon_livre = Book.find(1)
+        mon_livre.title = "Pages Blanches"
+        mon_livre.save
+
+Pour modifier mon titre, tout ce que j’ai à faire, c’est chercher dans la base de données le livre à modifier, puis de changer son titre comme je l’ai fait la première fois. Book.find(1) permet de chercher le livre dont l’identifiant est 1.
+
+Quelqu’un me souffle à l’oreillette que lire les Pages Blanches n’est pas très enthousiasmant non plus, alors supprimons-les :
+
+        mon_livre = Book.find(1)
+        mon_livre.destroy
+
+Les commandes parlent d’elles-mêmes. D'ailleurs, il est tout à fait possible de les enchaîner :
+
+        Book.find(1).destroy
+
+Ainsi, même plus besoin de variable !
+
+Si vous essayez cette deuxième méthode, une erreur va apparaître : à votre avis, pour quelle raison ?
+
+Le livre est déjà supprimé, tout simplement ! Il n’est pas possible de supprimer deux fois un même élément. Pour testez cette 2e façon de faire, recréez un livre. Son identifiant sera 2 : celui-ci augmente même si le précédent a été supprimé.
+
+
+    6.3- Utiliser les données sur le site
+
+Vous savez manipuler vos données dans la console rails. Vous êtes vraiment très proche de savoir le faire sur votre site. Premièrement, ajoutez quelques livres à votre base de données, ça nous donnera de quoi travailler. J’en profite pour vous donner une syntaxe plus courte que celle vue au chapitre précédent :
+
+        Book.create title: "Le Petit Prince"
+        Book.create title: "Le Meilleur des mondes"
+        Book.create title: "1984"
+
+En une ligne, le create fait la même chose qu’un new et save. Pratique ! Nous voici donc avec trois livres en base.
+
+Pour constater que tous ces éléments sont présents, vous pouvez faire un Book.all.
+
+Le résultat est un tableau de livres :
+
+#<ActiveRecord::Relation [#<Book id: 2, title: "Le petit prince">, #<Book id: 3, title: "Le Meilleur des mondes">, #<Book id: 4, title: "1984">]>
+
+Vous êtes maintenant prêt à créer une page listant ces livres. Faites exit pour sortir de la console rails et revenir dans votre terminal.
+
+Pour rappel, un contrôleur permet de gérer un ensemble de pages web. Pour ne pas mélanger ce sur quoi nous travaillons actuellement avec le code écrit précédemment, générez en un nouveau :
+
+rails generate controller books index
+
+C’est une bonne habitude avec Rails d’appeler un contrôleur comme la table qu’il concerne. C’est pourquoi je l’ai appelé « books ». Je veux que ce contrôleur gère une page qui liste mes livres. Par habitude, une page qui liste des choses, on l’appelle « index ». Toutes ces habitudes dont je vous parle sont très présentes chez les développeurs qui utilisent Rails. C’est bien de prendre le pli dès le début.
+
+Le contrôleur « books » va regrouper les pages qui affichent et manipulent livres de notre base de données. Si vous souhaitez créer une nouvelle page qui n'a rien à voir avec cela, n'oubliez pas que vous avez toujours le contrôleur « pages » à votre disposition.
+
+Voici à quoi ressemble le code généré par la commande précédente dans les répertoires app/controllers/ et app/views/ :
+
+# app/controllers/books_controller.rb
+
+        class BooksController < ApplicationController
+          def index
+          end
+        end
+
+# app/views/books/index.html.erb
+
+        <h1>Books#index</h1>
+        <p>Find me in app/views/books/index.html.erb</p>
+
+Par convention dans ce cours, je précède chaque fragment de code par un croisillon (#) suivi du nom du fichier où ce fragment se situe. Dans votre éditeur de texte, vous ne verrez donc pas cette première ligne.
+
+Vous savez que Book.all retourne un tableau de livres. Et vous savez comment faire une boucle dans une vue. Passez une minute à réfléchir à comment vous pourriez afficher la liste des livres sur votre page.
+
+Voici la solution :
+
+# app/controllers/books_controller.rb
+        class BooksController < ApplicationController
+          def index
+            @les_livres = Book.all
+          end
+        end
+
+# app/views/books/index.html.erb
+        <% @les_livres.each do |un_livre| %>
+          <p><%= un_livre.title %></p>
+        <% end %>
+
+J’ai utilisé les noms de variable « les_livres » et « un_livre » pour ne pas se mélanger dans les termes. Mais dans les règles de l’art, voici à quoi ressemblerait le code :
+
+# app/controllers/books_controller.rb
+        class BooksController < ApplicationController
+          def index
+            @books = Book.all
+          end
+        end
+
+# app/views/books/index.html.erb
+
+        <h1>Liste des livres</h1>
+
+        <% @books.each do |book| %>
+          <p><%= book.title %></p>
+        <% end %>
+
+La logique est la suivante : un tableau de « Book » s’appelle « books » (tableau = plusieurs = pluriel), auquel nous ajoutons un « @ » pour utiliser cette variable dans la vue ; et dans le each, nous appelons chaque livre « book », au singulier, vu qu’il n’y en a qu’un seul à la fois.
+
+Lancez le serveur, affichez la page http://localhost:3000/books/index : les trois titres s’affichent !
+
+La route /books/index n’est pas très élégante. Il serait plus sympathique d’avoir /books tout seul. Vous souvenez-vous de comment modifier une route ?
+
+Pour se faire, ajoutez cette ligne dans le fichier config/routes.rb :
+        get 'books' => 'books#index'
+
+Observez le résultat : http://localhost:3000/books.
+Récapitulatif du fonctionnement de Rails
+
+    1- Un utilisateur demande l’affichage d’une page du site ;
+    2- Le fichier des routes appelle la bonne fonction du bon contrôleur ;
+    3- Si besoin, le contrôleur récupère, modifie ou supprime des données via le modèle ;
+    4- Le modèle répercute ces modifications dans la base de données ;
+    5- Le contrôleur appelle la vue, qui construit la page HTML ;
+    6- Une fois la page HTML construite, celle-ci est envoyée au navigateur de l’utilisateur.
+
+
+    6.4- Ajoutez un formulaire de création
+Vous savez comment créer des données dans la console rails, vous savez comment afficher ces données sur une page web. Maintenant, voyons comment ajouter des données depuis cette page web.
+
+Pour cela, il nous faut un formulaire sur notre page. Ce formulaire aura un champ texte pour le titre du livre, et un bouton « créer ».
+
+Voici à quoi ressemblerait un formulaire classique en HTML pour notre situation :
+
+        <form action="/books" method="post">
+          <input type="text" name="title" />
+          <input type="submit" value="Ajouter le livre" />
+        </form>
+
+Mais Rails a besoin de davantage d’éléments, notamment pour des raisons de sécurité. Afin que vous n’ayez pas à saisir tous ces éléments mystérieux à la main, Rails met à votre disposition un helper. Un helper est une fonction qui produit du HTML à votre place. Voici à quoi cela ressemble :
+
+# app/views/books/index.html.erb
+
+        <%= form_tag "/books", method: "post" do %>
+          <input type="text" name="title" />
+          <input type="submit" value="Ajouter le livre" />
+        <% end %>
+
+L’ouverture et la fermeture du formulaire ont changé, tout en gardant les éléments qui nous importent : les attributs html action et method se sont transformés en paramètres du helper form_tag.
+
+La valeur « /books » de notre formulaire laisse penser que c’est la fonction index du BooksController qui va traiter nos données. En effet, nous avons une route qui dit cela :
+
+        get 'books' => 'books#index'
+
+Avec les routes et les contrôleurs, il est possible de séparer dans deux fonctions différentes le traitement d’une page en fonction de si l’on arrive dessus avec get ou avec post. Concrètement, qu’est-ce que cela donne ?
+
+# config/routes.rb
+
+        get 'books' => 'books#index'
+        post 'books' => 'books#create'
+
+# app/controllers/books_controller.rb
+
+        class BooksController < ApplicationController
+          def index
+            @books = Book.all
+          end
+
+          def create
+            # ...
+          end
+        end
+
+Voilà : quand nous cliquons sur le bouton « Ajouter le livre », c’est le code de la fonction create de BooksController qui sera exécuté.
+
+Que mettre dans la fonction create ? Si vous avez bien suivi, vous vous doutez qu’il y aura, au choix, un Book.new ou un Book.create. Mais il vous manque une information : comment récupérer ce que l’utilisateur a saisi dans le formulaire ?
+
+La réponse est la suivante : la variable params. C’est une variable de type Hash dont les clés coïncident avec les attributs name du formulaire, et les valeurs sont les saisies de l’utilisateur. Par exemple : params[:title].
+
+Vous ne vous souvenez plus de ce qu’est un Hash ? Rendez-vous dans ce chapitre du cours de Ruby.
+
+Bien ! Nous avons tout ce qu’il nous faut pour remplir notre fonction create :
+
+        def create
+          Book.create title: params[:title]
+        end
+
+Est-ce qu’il faut créer une nouvelle vue pour cette fonction ? A priori, oui… mais cette vue serait exactement la même que l’index. Il ne serait pas très élégant de dupliquer le code de la vue. Je vous présente une astuce : la redirection. Une redirection permet de rediriger le navigateur vers une autre route. Par exemple :
+
+        def create
+          Book.create title: params[:title]
+          redirect_to "/books"
+        end
+
+Et hop ! Juste après la création du livre, le navigateur retournera sur http://localhost:3000/books, dont la route vous emmènera dans la fonction index, qui affichera la bonne vue.
+
+Attention ! N’oubliez pas le « / » de « /books ». Sinon la redirection aboutirait à http://localhost:3000books. Le « books » se retrouvant collé au port 3000, votre navigateur n’aura plus aucune idée de ce qu’il faut faire et le message d’erreur ne vous sera d’aucune aide.
+
+Voici un récapitulatif du contrôleur :
+
+# app/controllers/books_controller.rb
+
+        class BooksController < ApplicationController
+          def index
+            @books = Book.all
+          end
+
+          def create
+            Book.create title: params[:title]
+            redirect_to "/books"
+          end
+        end
+
+Ajoutez quelques livres avec votre formulaire fraîchement réalisé :)
+
+Essayez de changer le Book.create par un Book.new en faisant en sorte que l’ajout de livre fonctionne toujours aussi bien. L’un n’est pas mieux que l’autre, c’est une question de goût.
+
+Vous rencontrez des difficultés à passer d’un Book.create à un Book.new ? N’hésitez pas à relire le chapitre 3 de cette partie du cours.

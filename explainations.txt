@@ -34,7 +34,6 @@ II. Installation de RoR
 
 Direction le terminal. Vous allez installer Ruby et Rails. Il y a quelques variations en fonction de si vous utilisez Ubuntu 18.04 ou OSX 10.13 (ou versions supérieurs). Sous OSX, vous devez avoir homebrew d’installé tel qu’indiqué dans le cours de Ruby.
 
-❄️❄️❄️❄️❄️❄️❄️❄️❄️❄️
 ☀️ ☀️ ☀️ ☀️ ☀️ ☀️ ☀️ ☀️ ☀️ ☀️
 http://railsapps.github.io/installrubyonrails-mac.html
 
